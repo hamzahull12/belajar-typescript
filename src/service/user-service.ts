@@ -20,7 +20,7 @@ import bcrypt from "bcrypt";
       });
       
       // check is username aready exist
-      if (verifyUsernameExist !== 0) {
+      if (verifyUsernameExist != 0) {
         throw new ResponseError('username already exits ', 400);  
       }
 
